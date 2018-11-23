@@ -1,0 +1,54 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+</div>
+<table class="table table-striped table-bordered">
+  <tr>
+    <td></td>
+    <td style="width: 700px;height: 50%">
+      <canvas id="barChart"></canvas>
+    </td>
+    <td>
+
+    </td>
+    <td>
+
+    </td>
+  </tr>
+  <tr>
+    <td>Item Count
+      <input class="form-control" class="m-1" [(ngModel)]="ItemCount" />
+    </td>
+    <td>
+      Data Order
+      <select class="m-1" [(ngModel)]="selectedDataOrder">
+        <option value="Random">
+          Random
+        </option>
+        <option value="Sorted">
+          Sorted
+        </option>
+        <option value="Reversed">
+          Reversed
+        </option>
+      </select>
+    </td>
+    <td>
+      Operation
+      <select class="m-1" [(ngModel)]="selectedOperation">
+        <option value="Comparisons">
+          Comparsions
+        </option>
+        <option value="Swaps">
+          Swaps
+        </option>
+
+      </select>
+    </td>
+    <td>
+      <button class="btn btn-lg btn-primary mt-1" (click)="Execute()">Execute</button>
+    </td>
+  </tr>
+</table>
